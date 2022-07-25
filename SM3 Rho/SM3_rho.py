@@ -30,8 +30,9 @@ def Rho():
             break
         else:
             history.add(c2)
+             counter+=1
            
         print("No conflicts")
-        counter+=1
+       
 if __name__ == "__main__":
     Rho()
