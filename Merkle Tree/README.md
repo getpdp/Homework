@@ -6,3 +6,11 @@
 我们可以依据此结构可以快速检索一个数据Element是否在数据集dataset内。同时Merkel Tree可以实现插入，删除等更新操作。在P2P网络和数字签名中都有应用。
 以下为实现一个简单的Merkel Tree的检索工作。
 在生成数据集的时候，假设其中一个数据为字符串‘abcdefg’,余下的均为指定长度的随机字符串。随后检索该字符串是否在Merkel Tree内：
+![Image text](https://github.com/getpdp/Homework/blob/main/Merkle%20Tree/figures/1.png)
+![Image text](https://github.com/getpdp/Homework/blob/main/Merkle%20Tree/figures/2.png)
+![Image text](https://github.com/getpdp/Homework/blob/main/Merkle%20Tree/figures/3.png)
+我们可以发现该字符串能在Merkel Tree上检索到。
+同理，如果随机生成100000个数据，而不知道其中任意一个数据时，检索字符串‘abcdefg’是否在Merkel Tree内：
+![Image text](https://github.com/getpdp/Homework/blob/main/Merkle%20Tree/figures/4.png)
+![Image text](https://github.com/getpdp/Homework/blob/main/Merkle%20Tree/figures/5.png)
+经观察我们发现随机生成的字符串没有‘abcdefg’，Merkel Tree的简单实现完成
