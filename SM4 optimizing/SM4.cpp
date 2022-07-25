@@ -108,4 +108,5 @@ void SM4Encryption(int q, unsigned long input[])
 	}
 	cout << "Finalcipher: 0x" << hex << cipher[35] << cipher[34] << cipher[33] << cipher[32] << endl;
 
+	
 }
